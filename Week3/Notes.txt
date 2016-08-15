@@ -1,0 +1,32 @@
+array for rock/papper/scissors
+2 variables: Playe 1 wins Player 2 wins 
+Playe 1 choice, Player 2 choice 
+
+loop that alerts each players for a choice 
+then logs choice once choice has been made 
+store input in player1 choice, or player2 choice. 
+
+If/else comparison statements for each possible combination of results including draw. 
+if comparison yeilds a win for either player increment wins based on player. 
+stop game if either player win counter is greater than or equal to 5. 
+
+alert the winner 
+
+
+two arrays one empty one with possible words
+var guesses
+var wins
+var empty variable for word 
+var userInput empty
+var correctInput
+event listen for any key press to intiate game
+
+i = 0 i < word.length; i++
+
+populate userinput 
+check against word
+if correct populate display 
+if incorrect populate incorrect letters and guesses decrease
+check if word is fully visually displayed somehow 
+if true terminate loop alert winner
+if false reintiate loop 

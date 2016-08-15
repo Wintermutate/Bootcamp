@@ -1,0 +1,32 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 100%;
+}
+h1 {
+	font-size: 20px;
+	font-weight: 150%;
+}
+h2 {
+	font-size: 18px;
+	font-weight: 125%;
+}
+a:default {
+	font-size: 10px;
+	color: red;
+	font-weight: 150%;
+}
+a:hover {
+	font-size: 20px;
+	color: yellow;`
+	font-weight: 200%;
+}
+a:active {
+	font-size: 30px;
+	color: blue;
+	font-weight: 250%;
+}
+a:visited {
+	display: none;
+}

@@ -1,0 +1,2 @@
+“Console.log” will test the variable within the dev tools
+'use strict' at the begining will force variables to be declared.

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+</head>
+<body>
+<script type="text/javascript">
+	var wins1 = 0;
+	var wins2 = 0;
+
+	for(var i = 1; i <=5; i++) {
+		var winner;
+		var correctInput;
+
+		do {
+			do {
+				var Player1 = prompt("Player1: Rock, Paper, or Scissors?").toLowerCase();
+				if(Player1 == "rock" || Player1 == "paper" || Player1 == "scissors") {
+					correctInput = true;
+				}
+				else{
+					correctInput = false;	
+					alert("Not valid input. Go again.");
+				}
+			} while(!correctInput);
+
+			do {
+				var Player2 = prompt("Player2: Rock, Paper, or Scissors?").toLowerCase();
+				if(Player2 == "rock" || Player2 == "paper" || Player2 == "scissors") {
+					correctInput = true;
+				}
+				else{
+					correctInput = false;	
+					alert("Not valid input. Go again.");
+				}
+			} while(!correctInput);
+
+			if(Player1 == Player2) {
+				alert("TIE!! Try again!")
+			}
+		} while(Player1 == Player2);
+		
+		if((Player1 == "rock" && Player2 == "scissors") || (Player1 == "paper" && Player2 == "rock") || (Player1 == "scissors" && Player2 == "paper")) {
+			winner = true;	
+		}
+		else {
+			winner = false;
+		}
+
+		if(winner) {
+			wins1++;
+			alert("Player1 wins!");
+		}
+		else {
+			wins2++;
+			alert("Player2 wins!");
+		}
+	}
+
+	alert("Final Score\nPlayer1: " + wins1 + "\nPlayer2: " + wins2);
+</script>
+</body>
+</html>
